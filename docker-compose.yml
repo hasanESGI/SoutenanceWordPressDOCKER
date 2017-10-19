@@ -8,13 +8,7 @@ services:
             -MYSQL_ROOT_PASSWORD=root
 			
 		
-			
-    phpmyadmin:
-        image:phpmyadmin/phpmyadmin
-        container_name:phpmyadmin2
-        environment:
-        links:
-            -mariadb:db
+ngzrjilzv
              ports:-"15000"
              
 		
