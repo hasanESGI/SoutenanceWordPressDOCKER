@@ -20,7 +20,7 @@ ngzrjilzv
         links:
            -mariadb:mysql
         ports:
-            -"15001:80"	
+            
 			
 			
 			
