@@ -1,26 +1,4 @@
-version: "3.4"
-services:
-    mariadb:
-        image:mariadb
-        container_name:mariadb2
-        environment:
-			
-            -MYSQL_ROOT_PASSWORD=root
-			
-		
-ngzrjilzv
-             ports:-"15000"
-             
-		
-		
-			
-    wordpress:
-        image:wordpress
-        container_name:wordpress2
-        links:
-           -mariadb:mysql
-        ports:
-           -"15001:80"	
+b
             
 			
 			
