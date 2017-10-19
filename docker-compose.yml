@@ -3,13 +3,13 @@ version: "3.3"
 services:
     mariadb:
         image: mariadb
-        container_name: mariadb2
+        container_name: mariadb-soutenance
         environment:
             - MYSQL_ROOT_PASSWORD=root
 
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
-        container_name: phpmyadmin2
+        container_name: phpmyadmin-soutenance
         links:
             - mariadb:db
         ports:
@@ -17,32 +17,8 @@ services:
 
     wordpress:
         image: wordpress
-        container_name: wordpress2
+        container_name: wordpress-soutenance
         links:
             - mariadb:mysql
         ports:
             - "15001:80"
-		
-			
-	
-        	
-        	
-
-
-             
-		
-		
-			
-   
-		
-
-			
-			
-			
-		
-		          
-			
-			
-			
-		
-		
